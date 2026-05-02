@@ -208,7 +208,7 @@ window.enviarPedido = function(){
 
   mensaje += `\n💰 *Total: $${total}*`;
 
-  window.open(`https://wa.me/529991641601?text=${encodeURIComponent(mensaje)}`);
+  window.open(`https://wa.me/529995131376?text=${encodeURIComponent(mensaje)}`);
 }
 
 });
