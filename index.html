@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pizzería Lizette</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+<h1>🍕 Pizzería Lizette</h1>
+
+<input id="nombre" placeholder="👤 Nombre">
+<input id="direccion" placeholder="📍 Dirección">
+
+<h2>Menú</h2>
+<div id="productos" class="grid"></div>
+
+<h2>🛒 Pedido</h2>
+<ul id="carrito"></ul>
+
+<div class="totalBox">
+Total: $<span id="total">0</span>
+</div>
+
+<textarea id="observaciones" placeholder="📝 Observaciones"></textarea>
+
+<button onclick="enviarPedido()">Enviar pedido</button>
+
+</div>
+
+<!-- MODAL -->
+<div id="modalIng" class="modal hidden" onclick="cerrarModal(event)">
+  <div class="modalContent">
+
+    <div class="modalHeader">
+      <h3 id="tituloModal"></h3>
+      <button class="cerrarX" onclick="cerrarModalDirecto()">✖</button>
+    </div>
+
+    <p id="subtituloPizza"></p>
+    <p id="contador"></p>
+
+    <div id="listaIngredientes"></div>
+
+    <button onclick="confirmarIngredientes()">Continuar</button>
+
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+  font-family: Arial;
+  background: linear-gradient(orange,#ff5722);
+  margin:0;
+}
+
+.app{
+  max-width:500px;
+  margin:auto;
+  padding:15px;
+  color:white;
+}
+
+.grid{
+  display:grid;
+  gap:12px;
+}
+
+.card{
+  background:white;
+  color:black;
+  padding:12px;
+  border-radius:12px;
+}
+
+.descripcion{
+  font-size:13px;
+  color:#555;
+}
+
+.precio{
+  font-weight:bold;
+  color:#ff5722;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#25D366;
+  color:white;
+  margin-top:5px;
+}
+
+/* 🔥 BOTÓN CERRAR CORREGIDO */
+.cerrarX{
+  width:35px !important;
+  height:35px;
+  padding:0;
+  font-size:18px;
+  border-radius:50%;
+  background:#f44336;
+}
+
+/* textarea */
+textarea{
+  width:100%;
+  padding:10px;
+  border-radius:10px;
+  border:none;
+  margin-top:10px;
+  height:80px;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+li{
+  background:white;
+  color:black;
+  padding:10px;
+  border-radius:10px;
+  margin-bottom:5px;
+}
+
+.eliminar{
+  background:#607d8b;
+  margin-top:5px;
+}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hidden{
+  display:none;
+}
+
+.modalContent{
+  background:white;
+  color:black;
+  width:90%;
+  max-width:400px;
+
+  /* 🔥 CLAVE REAL */
+  max-height:90vh;
+
+  border-radius:15px;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+}
+
+.modalHeader{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* 🔥 AQUÍ SE ARREGLA QUE NO SE VEAN LOS INGREDIENTES */
+#listaIngredientes{
+  flex:1;
+  overflow-y:auto;
+  max-height:55vh;
+  margin:10px 0;
+}
+
+/* 👇 hace visibles los items */
+#listaIngredientes label{
+  display:block;
+  padding:8px 0;
+  font-size:16px;
+}
